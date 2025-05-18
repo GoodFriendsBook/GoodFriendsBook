@@ -1,0 +1,2 @@
+legacy-cgi; python_version >= '3.13'
+multipart==1.2.1
