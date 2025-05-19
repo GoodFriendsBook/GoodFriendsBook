@@ -38,14 +38,11 @@ COOKIE_HEADERS = cookies.output() # headers
 html = ''
 page = ''
 
+# TODO: code goes into routes.py
 # apache2 .config redirects /ajax/* pages to /
 if os.environ['REQUEST_URI'].startswith('/ajax/'):
     page = os.environ['REQUEST_URI'].replace('/ajax/','')
-    html += page
-    print(COOKIE_HEADERS)
-    print("Content-Type:text/html;charset=utf-8;")
-    print()
-    print(html)
+    include(f'{AJAX_FOLDER}/{page}')
     exit()
 
 
