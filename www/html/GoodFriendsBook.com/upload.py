@@ -15,7 +15,7 @@ html += f"""
 <html>
    <body>
       <h1>UPLOAD FILE</h1>
-      <form enctype = "multipart/form-data" action = "https://localhost/ajax/upload_get.py" method = "post">
+      <form enctype = "multipart/form-data" action = "https://localhost/ajax/www_upload_get.py" method = "post">
       <p>File: <input type = "file" name = "filename" /></p>
       <p><input type = "submit" value = "Upload" /></p>
       </form>
